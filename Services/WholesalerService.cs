@@ -7,16 +7,16 @@ namespace BBP.Service
 {
     public class WholesalerService
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext Context;
 
         public WholesalerService(ApplicationDbContext context)
         {
-            _context = context;
+            this.Context = context;
         }
 
         public async Task<IEnumerable<Wholesaler>> GetWholesalers()
         {
-            IEnumerable<Wholesaler> wholesalers = await _context.Wholesalers
+            IEnumerable<Wholesaler> wholesalers = await this.Context.Wholesalers
                                                 .Include(w => w.Stocks)
                                                     .ThenInclude(s => s.Beer)
                                                 .ToListAsync();
@@ -26,7 +26,7 @@ namespace BBP.Service
 
         public async Task<Wholesaler> GetWholesaler(int id)
         {
-            Wholesaler? wholesalers = await _context.Wholesalers
+            Wholesaler? wholesalers = await this.Context.Wholesalers
                                                 .Include(w => w.Stocks)
                                                     .ThenInclude(s => s.Beer)
                                                 .FirstOrDefaultAsync(w => w.Id == id);
@@ -41,8 +41,8 @@ namespace BBP.Service
             {
                 Name = breweryDto.Name
             };
-            _context.Wholesalers.Add(newWholesaler);
-            await _context.SaveChangesAsync();
+            this.Context.Wholesalers.Add(newWholesaler);
+            await this.Context.SaveChangesAsync();
 
             return newWholesaler;
         }
