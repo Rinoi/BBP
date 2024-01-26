@@ -1,0 +1,11 @@
+Fonctionnalités
+- Lister l’ensemble des bières par brasserie et les grossistes qui la vendent : GET api/brewerys/stock
+- Création d’une nouvelle bière : POST api/beer
+- Ajoute la vente d’une bière existante, à un grossiste existant : PUT api/wholesaler/{id}/stock
+- Mise à jour de la quantité restante d’une bière chez un grossiste : PUT api/wholesaler/{id}/stock
+- Supprimer une bière d’un brasseur : DELETE api/beer/id
+- Demander un devis à un grossiste : GET api/wholesaler/{id}/devis
+
+TODO :
+MOCKUP data
+HASH pour les stock avec WholesalerId et BeerIDlu
