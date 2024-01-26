@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OD393/vam6I84fp8p+QjHs3bIv+UlQh13PeL5JhOfpEFCIQeHsAlGX670KgktvBupKk1JTj3mO0GMbTBRtXFwA==",
+  "dgSpecHash": "HQuO0YFpgisrrJKFUk7s6GM8sSLmxsbSZJAZqUI55VIB4rJEmMm5vpfMRIR2aToJCLEd0yDD65D5rt2gZZTd2g==",
   "success": true,
-  "projectFilePath": "/home/mayolcl/BBP/BBP.csproj",
+  "projectFilePath": "/home/mayolcl/git/BBP/BBP.csproj",
   "expectedPackageFiles": [
     "/home/mayolcl/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/mayolcl/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

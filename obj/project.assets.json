@@ -2443,11 +2443,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mayolcl/BBP/BBP.csproj",
+      "projectUniqueName": "/home/mayolcl/git/BBP/BBP.csproj",
       "projectName": "BBP",
-      "projectPath": "/home/mayolcl/BBP/BBP.csproj",
+      "projectPath": "/home/mayolcl/git/BBP/BBP.csproj",
       "packagesPath": "/home/mayolcl/.nuget/packages/",
-      "outputPath": "/home/mayolcl/BBP/obj/",
+      "outputPath": "/home/mayolcl/git/BBP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/mayolcl/.nuget/NuGet/NuGet.Config"
